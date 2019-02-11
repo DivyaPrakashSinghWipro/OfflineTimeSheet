@@ -1,0 +1,29 @@
+<html>
+  <h1>Employee Offline Time Sheet</h1>
+  <form action="/emp" method="post" onsubmit="DoSubmit()">
+  	Employee ID:
+	<input type="text" name="Emp_id" id="Emp_id"> 
+    <br><br>
+     Date:
+    <input type="date" name="date" id="date">
+    <br>  <br>
+    Hours:
+    <input type="number" name="hm" id="hm"> 
+    
+    <br>  <br>
+    Commments:
+    <input type="text" name="comments" id="comments"> 
+    <br>  <br>
+    
+    <input type="submit" value="submit" />
+
+  </form>
+  
+  <p id="demo"></p>
+ <script>
+     function DoSubmit() {
+      document.getElementById("hm").value=document.getElementById("hm").value*60;
+  	  
+  }
+ </script>
+</html>
